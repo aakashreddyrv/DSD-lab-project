@@ -14,11 +14,6 @@ wire[3:0] old_ALU_flag_NZCV = 4'b0000;
 ALU_processor alu1(opcode, op1, op2, out, old_ALU_flag_NZCV, ALU_flag_NZCV); 
 
 initial begin
-    $dumpfile("ALU.vcd");
-    $dumpvars();
-end
-
-initial begin
 	
 	opcode = 4'd0;
 	op1 = 32'b11001001110010011100100111001001;
